@@ -9,7 +9,7 @@ test('frames', async ({ page }) => {
   console.log("Number of frames:",allframes.length)
 
   //approach 1: using  name or url
-  const var=await page.frame('name'); // if name is present 
+  const vars=await page.frame('name'); // if name is present 
   const frame1=await page.frame({url:'https://ui.vision/demo/webtest/frames/frame_1.html'})
   await frame1.fill("[name='mytext1']",'Hello');
 
